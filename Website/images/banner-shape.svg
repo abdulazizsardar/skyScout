@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="946px" height="799px" viewBox="0 0 946 799" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.95740456%" y1="-12.364089%" x2="52.2597781%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2BB1E4" offset="0%"></stop>
+            <stop stop-color="#003FFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="StaffCloud.io-Website-Design---V2" transform="translate(-974.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <g id="Fill-6" transform="translate(974.000000, 0.000000)">
+                <path d="M1000,0 L1030,627.612942 C759,873.351403 398.201115,806.265412 319.81889,718.214007 C258.492676,649.322632 317.774952,612.8972 260.343473,565.085472 C204.58141,518.66234 179.829039,559.167183 128.864055,506.027081 C84.8197746,460.122996 148.582282,379.239719 115.694,323.558008 C101.438228,299.383044 82.2459264,278.623067 61.3045236,260.948644 C-15.0921523,196.535064 -22.8236576,50.6961749 53.6088768,0 L1000,0 Z" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

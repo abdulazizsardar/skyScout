@@ -1,0 +1,24 @@
+// works scss file
+
+.works__section {
+	.container {
+		max-width: 952px;
+	}
+	.section__content {
+		.row {
+			-webkit-align-items: center;
+			align-items: center;
+			&:not(:last-child){
+				margin-bottom: 110px;
+			}
+			&:nth-child(even) {
+				.works__info {
+					order: 2;
+				}
+			}
+		}
+	}
+	.works__thumb {
+		// float: right;
+	}
+}

@@ -1,0 +1,24 @@
+/**
+ * style scss file
+ * author: Mehidi Hassan <mehidihassan258@gmail.com>
+ * version: 1.0.0 
+ */
+
+ @import 'abstract/vars';
+ @import 'abstract/mixin';
+
+ @import 'base/template';
+
+// components
+@import 'components/header';
+@import 'components/works';
+@import 'components/features';
+@import 'components/get-started';
+@import 'components/faq';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/modal';
+
+// responsive
+@import 'layout/responsive';

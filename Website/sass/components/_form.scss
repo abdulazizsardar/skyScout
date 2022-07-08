@@ -1,0 +1,170 @@
+// form scss file
+
+// subscription form styles
+$form_width: 410px;
+$form_radius: 25px;
+input {
+	box-shadow: none;
+	border: none;
+	&:focus {
+		outline: none;
+	}
+}
+.subscribe__form {
+	display: inline-flex;
+	width: $form_width;
+	position: relative;
+	border-radius: $form_radius;
+	height: 50px;
+	box-shadow: 0 14px 40px 0 rgba(6,14,119,0.15);
+	input {
+		width: 100%;
+		height: 100%;
+		padding: 5px 28px;
+		font-size: 14px;
+		border-radius: $form_radius;
+		border: 1px solid transparent;
+		&:focus {
+			border-color: $primary_color;
+		}
+	}
+	button {
+		border: 0 none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 16px;
+		background: $primary_color;
+		color: #FFF;
+		height: 100%;
+		border-radius: $form_radius;
+		padding: 0 25px;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-ms-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+		&:hover {
+			background: darken($primary_color, 10%);
+		}
+	}
+}
+
+.common__form {
+	.form-group {
+		margin-bottom: 30px;
+	}
+	.country-select {
+		width: 100%;
+		input {
+			padding-left: 70px !important;
+		}
+		&.inside .flag-dropdown {
+			left: 15px;
+		}
+	}
+	label {
+		font-size: 18px;
+		color: #000000;
+		letter-spacing: 0.16px;
+		line-height: 30px;
+		margin-bottom: 15px;
+		.required__sign {
+			color: $danger_color;
+		}
+		&.error {
+			font-size: 13px;
+			color: $danger_color;
+		}
+	}
+	.select__wrapper {
+		position: relative;
+		.select__icon {
+			position: absolute;
+			top: 50%;
+			right: 34px;
+			@include transform(translateY(-50%));
+			color: #898989;
+		}
+		select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}	
+	}
+	.form-control {
+		padding: 10px 33px;
+		border-color: transparent;
+		border-radius: 25px;
+		height: 50px;
+		font-size: 16px;
+		color: #898989;
+		background: #FFFFFF;
+		box-shadow: 0 20px 99px 0 rgba(114,114,114,0.23);
+		&:focus {
+			border-color: $primary_color;
+			box-shadow: none;
+		}
+	}
+	textarea.form-control {
+		height: 150px;
+		resize: none;
+	}
+	.btn__theme {
+		width: 190px;
+		margin-top: 10px;
+	}
+	.files {
+		position: relative;
+		.files__meta {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			-webkit-align-items: center;
+			justify-content: center;
+			align-items: center;
+			justify-content: center;
+			top: 0;
+			left: 0;
+			flex-direction: column;
+			pointer-events: none;
+			.files__hints-thumb {
+				margin-bottom: 24px;
+			}
+			.files__hints-info {
+				font-size: 16px;
+				color: #898989;
+				letter-spacing: 0.15px;
+				label {
+					text-decoration: underline;
+					color: $primary_color;
+					cursor: pointer;
+				}
+			}
+		}
+		input[type="file"] {
+			height: 180px;
+			text-indent: -9999px;
+			color: transparent;
+		}
+		.file__name {
+			vertical-align: text-bottom;
+			font-size: 16px;
+			color: #898989;
+			letter-spacing: 0.15px;
+		}
+		.remove__file {
+			display: inline-block;
+			padding: 0 5px;
+			position: relative;
+			z-index: 999;
+			pointer-events: initial;
+			font-size: 20px;
+			cursor: pointer;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}

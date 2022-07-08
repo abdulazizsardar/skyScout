@@ -1,0 +1,112 @@
+// header css file
+.banner__section {
+	padding-top: 27px;
+	// background: url('../images/banner_illustration.gif');
+	background-position: top right;
+	min-height: 800px;
+	background-repeat: no-repeat;
+	-webkit-background-size: 50%;
+	-o-background-size: 50%;
+	background-size: 50%;
+	position: relative;
+	padding-bottom: 30px;
+
+	.banner__bg-layer {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		text-align: right;
+		@media (max-width: 991px){
+			display: none;
+		}
+		#Slider-illustration {
+			margin-top: 150px;
+		}
+		svg {
+			width: 50%;
+			height: auto;
+		}
+	}
+
+
+	h1 {
+		span {
+			color: #A84BFF;
+		}
+	}
+
+	.scroll__to--bottom {
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		z-index: 11;
+		@include transform(translateX(-50%));
+	}
+	nav.navbar {
+		position: absolute;
+		top: 35px;
+		left: 0;
+		width: 100%;
+		z-index: 99999;
+		padding: 0;
+		// @include transition(all .3s ease);
+	}
+	.navbar .navbar-nav {
+
+		li {
+			&:not(:last-child){
+				margin-right: 7px;
+			}
+			a {
+				color: #fff;
+				padding: 12px 18px;
+				border-radius: 21px;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 100%;
+				// transition: all .3s;
+				&:hover {
+					background: #fff;
+					color: $primary_color;
+				}
+				&.active {
+					@extend a:hover;
+				}
+			}
+		}
+	}
+	.section__content {
+		margin-top: 110px;
+		img {
+			float: right;
+		}
+	}
+}
+
+// sticky header controll
+body.is__header-fixed {
+
+	.banner__section {
+		nav.navbar {
+			padding: 5px 0;
+			position: fixed;
+			top: 0;
+			background: #fff;
+			-webkit-box-shadow: 0 0 10px -3px rgba(0,0,0,0.3);
+			box-shadow: 0 0 10px -3px rgba(0,0,0,0.3);
+			li a {
+				color: $primary_color;
+				// font-size: 15px;
+				&.active, &:hover {
+					color: #fff;
+					background: $primary_color;
+				}
+			}
+			.navbar-brand img {
+				height: 30px;
+				width: auto;
+			}
+		}
+	}
+}

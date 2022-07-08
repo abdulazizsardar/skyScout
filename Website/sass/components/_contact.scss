@@ -1,0 +1,23 @@
+.contact__section {
+	.container {
+		max-width: 792px;
+	}
+	.contact__form-container {
+		position: relative;
+		z-index: 2;
+		background: #FFFFFF;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		box-shadow: 0 80px 120px 0 rgba(0,0,0,0.10);
+		padding: 60px;
+		h3 {
+			font-size: 35px;
+			text-align: center;
+			color: #000000;
+			letter-spacing: 0.32px;
+			line-height: 35px;
+		}
+		
+	}	
+
+}

@@ -1,0 +1,108 @@
+$border_color: #DADAE2;
+.section__get-started {
+	background-image: linear-gradient(-181deg, #FEFEFE 0%, #EDF2F2 100%);
+	.section__title-column {
+		.requirement__item {
+			padding-left: 0;
+			pointer-events: none;
+			h2 {
+				margin-bottom: 25px;
+				span {
+					color: $primary_color;
+				}
+			}
+		}
+	}
+	[class*="col-"]{
+		&:nth-child(n+4){
+			.requirement__item {
+				border-top: 1px solid $border_color;
+			}
+		}
+		&:nth-child(3n+3){
+			.requirement__item {
+				border-right: 0 none;
+			}
+		}
+	}
+	.requirement__item {
+		height: 100%;
+		padding: 41px 44px;
+
+
+		border-right: 1px solid $border_color;
+		@include transition(all .3s);
+		@media (min-width: 768px){
+			&:hover, &.active {
+				background: #FFFFFF;
+				box-shadow: 0 20px 99px 0 rgba(114,114,114,0.23);
+				border-radius: 5px;
+			}
+		}
+		.requirement__icon {
+			background: #FFFFFF;
+			box-shadow: 0 14px 34px 0 rgba(86,130,255,0.13);
+			// background-image: linear-gradient(-202deg, #00E653 0%, #00C829 96%);
+			// box-shadow: 0 9px 9px 0 rgba(176,233,166,0.60);
+			width: 70px;
+			height: 70px;
+			-webkit-border-radius: 100%;
+			border-radius: 100%;
+			position: relative;
+			margin-bottom: 25px;
+			&:after {
+				content: '';
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				z-index: 1;
+				top: calc(50% + 10px);
+				left: 50%;
+				background: url('../images/icons/checked.svg') no-repeat;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+		.requirement__title {
+			margin-bottom: 15px;
+			white-space: nowrap;
+			-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		p {
+			margin: 0;
+		}
+		@media(max-width: 767px){
+			text-align: center;
+			.requirement__icon {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+// process section
+.process__section {
+	background: #FCFDFD;
+	[class*="col-"]:not(:last-child){
+		.process__thumb:after {
+			content: '';
+			position: absolute;
+			width: 90px;
+			height: 90px;
+			top: calc(50% - 20px);
+			right: -90px;
+			background: url('../images/icons/right-arrow-circle.svg') no-repeat;
+		}
+	}
+	.process__thumb {
+		position: relative;
+		display: inline-block;
+		box-shadow: 0 13px 33px 0 rgba(86,130,255,0.08);
+		margin-bottom: 33px;
+		img {
+			// margin-bottom: -33px;
+		}
+	}
+}

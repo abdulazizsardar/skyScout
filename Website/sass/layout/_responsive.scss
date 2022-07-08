@@ -1,0 +1,269 @@
+// responsive styles
+@media (min-width: 1901px) {
+	.banner__section {
+		background-size: 55% 100%;
+		// min-height: 650px;
+	}
+	.features__section {
+		margin-top: 150px;
+		&:before {
+			background-size: cover;
+		}	
+	}
+}
+@media (max-width: 1440px) and (min-width: 992px){
+	.banner__section {
+		background-size: 53%;
+		min-height: 650px;
+	}
+}
+
+@media (min-width: 1441px){
+	.features__section:before {
+		height: 300px;
+		top: -190px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.faq__section {
+		background-image: linear-gradient(-157deg, #2bb1e4 0%,#003fff 97%);
+	}
+}
+
+@media (max-width: 1200px) {
+	.footer__section {
+		.copyright__info {
+			padding: 70px 0 22px;
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.subscribe__form {
+		width: 100%;
+	}
+	.banner__section {
+		background: #fff;
+		min-height: initial;
+		.scroll__to--bottom {
+			bottom: -70px;
+		}
+		.navbar .navbar-nav li a {
+			color: $primary_color;
+		}
+	}
+	.section__get-started .requirement__item {
+		padding: 25px;
+		h2 {
+			font-size: 30px;
+			line-height: 1.4em;
+		}
+		br {
+			display: none;
+		}
+	}
+	.features__section .feature__item .feature__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.4em;
+		br {
+			display: none;
+		}
+	}
+	.process__section {
+		.section__content {
+			padding: 0 45px;
+			.row {
+				margin: 0 -90px;
+				[class*="col-"] {
+					padding: 0 45px;
+				}
+			}
+			br {
+				display: none;
+			}
+			.process__name {
+				font-size: 20px;
+				line-height: 1.4em;
+			}
+		}
+	}
+	.footer__section {
+		.footer__layer {
+			// height: calc(100% - 360px);
+		}	
+		.copyright__info {
+			padding: 70px 0 15px;
+			font-size: 15px;
+		}
+	}
+	
+}
+
+@media (min-width: 576px) and (max-width: 991px){
+	
+	.container {
+		max-width: 100% ;
+	}
+	// .container {
+	// 	max-width: 540px;
+	// }
+
+}
+
+@media (max-width: 767px) {
+	.section__wrapper {
+		padding: 60px 0;
+	}
+	.features__section:before {
+		height: 90px;
+		top: -20px;
+	}
+	.banner__section {
+		// background: #fff;
+		// min-height: 650px;
+		.scroll__to--bottom {
+			bottom: -30px;
+		}
+		.navbar-toggler {
+			outline: none !important;
+		}
+		.navbar-toggler-icon {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+		.navbar-collapse {
+			transition: all .3s;		
+			padding: 5px 15px;
+			background: #fff;
+			margin-left: -15px;
+		}
+		.navbar .navbar-nav li {
+			// margin-right: 0 !important;
+			a {
+				color: $primary_color;
+				&.active {
+					// padding: 12px 14px;
+				}
+			}	
+		}
+	}
+
+	.process__section [class*="col-"]:not(:last-child) .process__thumb:after {
+		display: none;
+	}
+
+	.footer__section .footer__layer {
+		// height: calc(100% - 260px);
+	}
+	.modal {
+		z-index: 99999;
+		.modal-body {
+			padding: 20px;
+		}
+		.modal-content .close {
+			top: 3px;
+			right: 15px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	h1, h2, h3 {
+		font-size: 36px;
+		line-height: 1.4em;
+		margin: 0 0 20px;
+	}
+	.section__header h2 {
+		font-size: 36px;
+		line-height: 1.4em;
+	}
+	.contact__section .contact__form-container h3 {
+		font-size: 28px;
+		line-height: 1.4em;
+	}
+	.banner__section {
+		nav.navbar {
+			padding-left: 15px;
+		}
+
+	}
+	.is__header-fixed {
+		.banner__section {
+			nav.navbar {
+				max-width: 100%;
+				padding-left: 15px !important;
+			}
+
+		}
+	}
+	.works__section {
+		.works__thumb {
+			text-align: center;
+			margin-bottom: 30px;
+			order: 0;
+		}
+		.works__info {
+			order: 1;
+			br {
+				display: none;
+			}
+			h3 {
+				font-size: 30px;
+				line-height: 1.4em;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.section__get-started {
+		.section__title-column {
+			.requirement__item {
+				text-align: center;
+			}	
+		}
+		.requirement__item {
+			padding: 0 25px;
+			border: 0 none !important;
+			margin-bottom: 50px;	
+			
+		}	
+	}
+	.faq__section .faq__item {
+		padding: 15px 50px 15px 15px;
+		&:after {
+			right: 15px;		
+		}
+		&:before {
+			right: 26px;		
+		}
+		.faq__qsn h5 {
+			font-size: 18px;
+			line-height: 1.4em;
+		}
+		.faq__ans p {
+			font-size: 16px;
+			line-height: 1.4em;		
+		}
+	}
+
+	.contact__section .contact__form-container {
+		padding: 20px;
+	}
+	.common__form .files .files__meta {
+		padding: 15px;
+	}
+
+	.works__section .section__content .row:not(:last-child) {
+		margin-bottom: 50px;
+	}
+	.footer__section .footer__layer {
+		// height: calc(100% - 60px);
+	} 
+	.footer__section .footer__logo {
+		margin-top: 320px;
+	}
+	
+}

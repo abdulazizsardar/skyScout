@@ -1,0 +1,45 @@
+// features scss file
+.features__section {
+	background: #F6F7FB;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -90px;
+		left: 0;
+		width: 100%;
+		height: 200px;
+		z-index: 2;
+		background: #fff url('../images/features-bg-shape.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom;
+	}
+	.container {
+		max-width: 950px;
+	}
+	[class*="col-"] {
+		margin-bottom: 25px;
+	}
+	.feature__item {
+		// margin-bottom: 25px;
+		background: #FFFFFF;
+		box-shadow: 0 20px 50px 0 rgba(86,130,255,0.13);
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		height: 120px;
+		padding: 25px 40px;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		.feature__icon {
+			margin: 0 20px -40px -15px;
+		}
+		.feature__title {
+			margin-bottom: 0;
+			font-weight: 600;
+			letter-spacing: 0.18px;
+		}
+		
+	}
+}
